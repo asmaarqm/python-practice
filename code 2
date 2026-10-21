@@ -1,0 +1,13 @@
+students_test_numbers={}
+while True:
+    name=input("Enter student name (or type 'exit' to finish): ")
+    if name.lower()=='exit':
+        break
+    grade=float(input((f"enter grade for {name};")))
+    students_test_numbers[name]=grade
+
+name=input("Enter student name to retrieve grade: ")
+if name in students_test_numbers:
+    print(f"{name} grade is {students_test_numbers[name]}")
+else:
+    print(f"{name} not found in records.")

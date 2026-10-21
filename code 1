@@ -1,0 +1,21 @@
+student_grades = {
+    'Amir': 90,
+    'Bilal': 85,
+    'Dilawar': 92
+}
+
+search_name = input("Enter the name to search: ")
+
+if search_name in student_grades:
+    print(f"{search_name} grades:", student_grades[search_name])
+else:
+    print(f"{search_name} not found in record")
+    choice = input("Do you want to add this student to the record? (y/n): ")
+    if choice == 'y':
+        new_grades = int(input(f"Enter the grades for {search_name}: "))
+        student_grades[search_name] = new_grades
+        print(f"Added {search_name} with grade {new_grades}.")
+
+print("\nUpdated Dictionary:")
+for student, grade in student_grades.items():
+    print(f"{student}: {grade}")
