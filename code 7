@@ -1,0 +1,9 @@
+class_teacher={
+    "class1":["ali","ahmed","sara"],
+    "class2":["hassan","fatima","zainab"],
+    "class3":["omar","layla","youssef"]}
+
+print(class_teacher)
+print(class_teacher["class3"])
+for i in class_teacher:
+    print(i, class_teacher[i])
