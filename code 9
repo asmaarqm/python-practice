@@ -1,0 +1,9 @@
+import os
+
+# Specifies path to your user home folder (~/abc.txt)
+file_path = os.path.expanduser("~/abc.txt")
+
+with open(file_path, "w") as new_file:
+    new_file.write("hello my world")
+
+print("file written successfully at:", file_path)
